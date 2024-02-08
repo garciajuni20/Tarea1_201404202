@@ -11,7 +11,7 @@ def agregar_cancion():
     nueva_cancion = {
         'nombre': data['nombre'],
         'artista': data['artista'],
-        'album': data['album']
+        'genero': data['genero']
     }
     canciones.append(nueva_cancion)
     return jsonify(nueva_cancion), 200
