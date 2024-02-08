@@ -16,5 +16,10 @@ def agregar_cancion():
     canciones.append(nueva_cancion)
     return jsonify(nueva_cancion), 200
 
+@app.route('/ver', methods=['GET'])
+def ver_canciones():
+    return jsonify(canciones)
+
+
 if __name__ == '__main__':
     app.run(debug=True)
